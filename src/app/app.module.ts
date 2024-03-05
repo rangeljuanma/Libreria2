@@ -10,6 +10,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 import { MessagesModule } from 'primeng/messages';
 import { MessageService } from 'primeng/api';
+import { RouterModule } from '@angular/router';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +25,8 @@ import { MessageService } from 'primeng/api';
     BrowserAnimationsModule,
     ReactiveFormsModule,
     FormsModule,
-    MessagesModule
+    MessagesModule,
+    RouterModule
   ],
   providers: [
     provideClientHydration(),
