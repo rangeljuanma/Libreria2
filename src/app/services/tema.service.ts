@@ -18,7 +18,7 @@ export class TemaService implements DaoLibreria<Tema, string>{
 
 
   public getAll(): Observable<Tema[]>{
-    return this.http.get<Array<Tema>>(`${this.prefixUrl}/${this.endPoint}`)
+    return this.http.get<Array<Tema>>(`${this.baseURL}/${this.endPoint}`)
                     .pipe(
                       catchError( () => of([]))
                     );
